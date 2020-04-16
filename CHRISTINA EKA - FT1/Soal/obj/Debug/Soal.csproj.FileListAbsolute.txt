@@ -1,0 +1,16 @@
+D:\Batch185\Logic_CHRISTINA_EKA\Soal\bin\Debug\Soal.exe.config
+D:\Batch185\Logic_CHRISTINA_EKA\Soal\bin\Debug\Soal.exe
+D:\Batch185\Logic_CHRISTINA_EKA\Soal\bin\Debug\Soal.pdb
+D:\Batch185\Logic_CHRISTINA_EKA\Soal\bin\Debug\Logic.exe
+D:\Batch185\Logic_CHRISTINA_EKA\Soal\bin\Debug\Logic.pdb
+D:\Batch185\Logic_CHRISTINA_EKA\Soal\obj\Debug\Soal.csprojResolveAssemblyReference.cache
+D:\Batch185\Logic_CHRISTINA_EKA\Soal\obj\Debug\Soal.exe
+D:\Batch185\Logic_CHRISTINA_EKA\Soal\obj\Debug\Soal.pdb
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\Soal\obj\Debug\Soal.csprojResolveAssemblyReference.cache
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\Soal\obj\Debug\Soal.exe
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\Soal\obj\Debug\Soal.pdb
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\Soal\bin\Debug\Soal.exe.config
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\Soal\bin\Debug\Soal.exe
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\Soal\bin\Debug\Soal.pdb
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\Soal\bin\Debug\Logic.exe
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\Soal\bin\Debug\Logic.pdb
