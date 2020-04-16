@@ -1,0 +1,12 @@
+D:\Batch185\Logic_CHRISTINA_EKA\Logic\bin\Debug\Logic.exe.config
+D:\Batch185\Logic_CHRISTINA_EKA\Logic\bin\Debug\Logic.exe
+D:\Batch185\Logic_CHRISTINA_EKA\Logic\bin\Debug\Logic.pdb
+D:\Batch185\Logic_CHRISTINA_EKA\Logic\obj\Debug\Base.csprojResolveAssemblyReference.cache
+D:\Batch185\Logic_CHRISTINA_EKA\Logic\obj\Debug\Logic.exe
+D:\Batch185\Logic_CHRISTINA_EKA\Logic\obj\Debug\Logic.pdb
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\Logic\bin\Debug\Logic.exe.config
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\Logic\bin\Debug\Logic.exe
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\Logic\bin\Debug\Logic.pdb
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\Logic\obj\Debug\Base.csprojResolveAssemblyReference.cache
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\Logic\obj\Debug\Logic.exe
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\Logic\obj\Debug\Logic.pdb
