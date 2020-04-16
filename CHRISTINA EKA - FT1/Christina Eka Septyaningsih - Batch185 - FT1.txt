@@ -1,0 +1,198 @@
+--CHRISTINA EKA SEPTYANINGSIH (BATCH 185)
+
+--membuat database
+create database batch185
+
+--membuat tabel
+use batch185
+go
+create table Mahasiswa (                                  --> tabel Mahasiswa
+	KODE_MAHASISWA char(5) primary key,
+	NAMA_MAHASISWA varchar(100) not null,
+	ALAMAT varchar(200) not null,
+	KODE_AGAMA char(5) not null,
+	KODE_JURUSAN char(5) not null
+);
+
+create table Jurusan (                                    --> tabel Jurusan
+	KODE_JURUSAN char(5) primary key,
+	NAMA_JURUSAN varchar(50) not null,
+	STATUS_JURUSAN varchar(100) not null,
+);
+
+create table Ujian (                                      --> tabel Ujian
+	KODE_UJIAN char(5) primary key,
+	NAMA_UJIAN varchar(50) not null,
+	STATUS_UJIAN varchar(100) not null
+);
+
+create table Dosen (                                      --> tabel Dosen
+	KODE_DOSEN char(5) primary key,
+	NAMA_DOSEN varchar(100) not null,
+	KODE_JURUSAN char(5) not null,
+	KODE_TYPE_DOSEN char(5) not null
+);
+
+create table Nilai (                                      --> tabel Nilai
+	KODE_NILAI char(5) primary key,
+	KODE_MAHASISWA char(5) not null,
+	KODE_UJIAN char(5) not null,
+	NILAI numeric
+);
+
+create table Agama (                                      --> tabel Agama
+	KODE_AGAMA char(5) primary key,
+	DESKRIPSI varchar(20) not null
+);
+
+create table TypeDosen (                                  --> tabel Type Dosen
+	KODE_TYPE_DOSEN char(5) primary key,
+	DESKRIPSI varchar(20) not null
+);
+
+--menginput data
+use batch185
+go
+insert into Mahasiswa (KODE_MAHASISWA, NAMA_MAHASISWA, ALAMAT, KODE_AGAMA, KODE_JURUSAN)
+values
+('M001', 'Budi Gunawan', 'Jl. Mawar No 3 RT 05 Cicalengka, Bandung', 'A001', 'J001'),
+('M002', 'Rinto Rahardjo', 'Jl. Kebagusan No.33 RT04 RW06, Bandung', 'A002', 'J002'),
+('M003', 'Asep Saepudin', 'Jl. Sumatera No.12 RT02 RW01, Ciamis', 'A001', 'J003'),
+('M004', 'M. Hafif Isbullah', 'Jl. Jawa No 01 RT01 RW01, Jakarta Pusat', 'A001', 'J001'),
+('M005', 'Cahyono', 'Jl. Niagara No.54 RT01 RW09, Surabaya', 'A003', 'J002');
+
+insert into Dosen (KODE_DOSEN, NAMA_DOSEN, KODE_JURUSAN, KODE_TYPE_DOSEN)
+values
+('D001', 'Prof. Dr. Retno Wahyuningsih', 'J001', 'T002'),
+('D002', 'Prof. Roy M. Soetikno', 'J002', 'T001'),
+('D003', 'Prof. Hendri A. Verbrugh', 'J003', 'T002'),
+('D004', 'Prof. Risma Suparwata', 'J004', 'T002'),
+('D005', 'Prof. Amir Sjarifuddin Madjid, MM, MBA', 'J005', 'T001');
+
+insert into Jurusan (KODE_JURUSAN, NAMA_JURUSAN, STATUS_JURUSAN)
+values
+('J001', 'Teknik Informatika', 'Aktif'),
+('J002', 'Manajemen Informatika', 'Aktif'),
+('J003', 'Sistem Informasi', 'Non Aktif'),
+('J004', 'Sistem Komputer', 'Aktif'),
+('J005', 'Komputer Science', 'Non Aktif');
+
+insert into Ujian (KODE_UJIAN, NAMA_UJIAN, STATUS_UJIAN)
+values
+('U001', 'Algoritma', 'Aktif'),
+('U002', 'Aljabar', 'Aktif'),
+('U003', 'Statistika', 'Non Aktif'),
+('U004', 'Etika Profesi', 'Non Aktif'),
+('U005', 'Bahasa Inggris', 'Aktif');
+
+insert into Nilai (KODE_NILAI, KODE_MAHASISWA, KODE_UJIAN, NILAI)
+values
+('N001', 'M004', 'U001', 90),
+('N002', 'M001', 'U001', 80),
+('N003', 'M002', 'U003', 85),
+('N004', 'M004', 'U002', 95),
+('N005', 'M005', 'U005', 70);
+
+insert into TypeDosen (KODE_TYPE_DOSEN, DESKRIPSI)
+values
+('T001', 'Tetap'),
+('T002', 'Honorer'),
+('T003', 'Expertise');
+
+insert into Agama (KODE_AGAMA, DESKRIPSI)
+values
+('A001', 'Islam'),
+('A002', 'Kristen'),
+('A003', 'Katolik'),
+('A004', 'Hindu'),
+('A005', 'Budha');
+
+--soal 2
+use batch185
+go
+alter table Dosen
+alter column NAMA_DOSEN varchar(200) not null                --> mengubah panjang varchar pada kolom NAMA_DOSEN, tabel Dosen
+
+--soal 3
+use batch185
+go
+select KODE_MAHASISWA, NAMA_MAHASISWA, NAMA_JURUSAN, DESKRIPSI as AGAMA
+from Mahasiswa m
+inner join Jurusan j on m.KODE_JURUSAN=j.KODE_JURUSAN
+inner join Agama a on m.KODE_AGAMA=a.KODE_AGAMA
+where KODE_MAHASISWA='M001'                                  --> Menampilkan data mahasiswa dengan KODE_MAHASISWA = M001
+
+--soal 4
+use batch185
+go
+select KODE_MAHASISWA, NAMA_MAHASISWA, NAMA_JURUSAN, DESKRIPSI as AGAMA, STATUS_JURUSAN
+from Mahasiswa m
+inner join Jurusan j on m.KODE_JURUSAN=j.KODE_JURUSAN
+inner join Agama a on m.KODE_AGAMA=a.KODE_AGAMA
+where STATUS_JURUSAN='Non Aktif'                              --> Menampilkan data mahasiswa yang mengambil Jurusan (non aktif)
+
+--soal 5
+use batch185
+go
+select m.KODE_MAHASISWA, NAMA_MAHASISWA, NAMA_JURUSAN, DESKRIPSI as AGAMA, NAMA_UJIAN, NILAI, STATUS_UJIAN
+from Mahasiswa m
+inner join Jurusan j on m.KODE_JURUSAN=j.KODE_JURUSAN
+inner join Agama a on m.KODE_AGAMA=a.KODE_AGAMA
+inner join Nilai n on m.KODE_MAHASISWA=n.KODE_MAHASISWA
+inner join Ujian u on n.KODE_UJIAN=u.KODE_UJIAN
+where NILAI>80 and STATUS_UJIAN='Aktif'                       --> Menampilkan data mahasiswa dengan Nilai > 80  dan status ujian = Aktif
+
+--soal 6
+use batch185
+go
+select *from Jurusan
+where NAMA_JURUSAN like '%Sistem%'                            --> Menampilkan data Jurusan yang mengandung kata "Sistem"
+
+--soal 7
+use batch185
+go
+select m.KODE_MAHASISWA, NAMA_MAHASISWA, NAMA_JURUSAN, count(*) as JUMLAH_UJIAN
+from Mahasiswa m
+inner join Jurusan j on m.KODE_JURUSAN=j.KODE_JURUSAN
+inner join Nilai n on m.KODE_MAHASISWA=n.KODE_MAHASISWA
+group by m.KODE_MAHASISWA, NAMA_MAHASISWA, NAMA_JURUSAN
+having count(*)>1                                             --> Menampilkan data Mahasiswa yang mengikuti ujian lebih dari 1x
+
+-soal 8
+use batch185
+go
+select KODE_MAHASISWA, NAMA_MAHASISWA, NAMA_JURUSAN, a.DESKRIPSI as AGAMA, NAMA_DOSEN, STATUS_JURUSAN, t.DESKRIPSI as DESK_DOSEN
+from Mahasiswa m
+inner join Jurusan j on m.KODE_JURUSAN=j.KODE_JURUSAN
+inner join Agama a on m.KODE_AGAMA=a.KODE_AGAMA
+inner join Dosen d on j.KODE_JURUSAN=d.KODE_JURUSAN
+inner join TypeDosen t on d.KODE_TYPE_DOSEN=t.KODE_TYPE_DOSEN
+where KODE_MAHASISWA='M001'
+
+--soal 9
+--create view
+use batch185
+go
+create view [Soal 9] as
+select KODE_MAHASISWA, NAMA_MAHASISWA, NAMA_JURUSAN, a.DESKRIPSI as AGAMA, NAMA_DOSEN, STATUS_JURUSAN, t.DESKRIPSI as DESK_DOSEN
+from Mahasiswa m
+inner join Jurusan j on m.KODE_JURUSAN=j.KODE_JURUSAN
+inner join Agama a on m.KODE_AGAMA=a.KODE_AGAMA
+inner join Dosen d on j.KODE_JURUSAN=d.KODE_JURUSAN
+inner join TypeDosen t on d.KODE_TYPE_DOSEN=t.KODE_TYPE_DOSEN
+where KODE_MAHASISWA='M001'                                    --> create view query soal no.8
+
+--eksekusi view
+use batch185
+go
+select *from [Soal 9]
+
+--soal 10
+use batch185
+go
+select m.KODE_MAHASISWA, NAMA_MAHASISWA, NAMA_JURUSAN, DESKRIPSI as AGAMA, NAMA_UJIAN, NILAI
+from Mahasiswa m
+inner join Jurusan j on m.KODE_JURUSAN=j.KODE_JURUSAN
+inner join Agama a on m.KODE_AGAMA=a.KODE_AGAMA
+left join Nilai n on m.KODE_MAHASISWA=n.KODE_MAHASISWA
+left join Ujian u on n.KODE_UJIAN=u.KODE_UJIAN                --> Menampilkan seluruh data Mahasiswa beserta nilai

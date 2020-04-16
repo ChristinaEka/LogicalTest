@@ -1,0 +1,20 @@
+D:\Batch185\Logic_CHRISTINA_EKA\FT1\bin\Debug\FT1.exe.config
+D:\Batch185\Logic_CHRISTINA_EKA\FT1\bin\Debug\FT1.exe
+D:\Batch185\Logic_CHRISTINA_EKA\FT1\bin\Debug\FT1.pdb
+D:\Batch185\Logic_CHRISTINA_EKA\FT1\bin\Debug\Logic.exe
+D:\Batch185\Logic_CHRISTINA_EKA\FT1\bin\Debug\Soal.exe
+D:\Batch185\Logic_CHRISTINA_EKA\FT1\bin\Debug\Logic.pdb
+D:\Batch185\Logic_CHRISTINA_EKA\FT1\bin\Debug\Soal.pdb
+D:\Batch185\Logic_CHRISTINA_EKA\FT1\obj\Debug\FT1.csprojResolveAssemblyReference.cache
+D:\Batch185\Logic_CHRISTINA_EKA\FT1\obj\Debug\FT1.exe
+D:\Batch185\Logic_CHRISTINA_EKA\FT1\obj\Debug\FT1.pdb
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\FT1\bin\Debug\FT1.exe.config
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\FT1\obj\Debug\FT1.exe
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\FT1\obj\Debug\FT1.pdb
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\FT1\bin\Debug\FT1.exe
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\FT1\bin\Debug\FT1.pdb
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\FT1\bin\Debug\Logic.exe
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\FT1\bin\Debug\Soal.exe
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\FT1\bin\Debug\Logic.pdb
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\FT1\bin\Debug\Soal.pdb
+H:\PRIVATE\XSIS MITRA UTAMA -Batch185\CHRISTINA EKA - FT1\FT1\obj\Debug\FT1.csprojResolveAssemblyReference.cache
